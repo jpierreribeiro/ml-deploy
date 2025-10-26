@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi[standard]>=0.120.0",
+    "pathlib>=1.0.1",
     "pydantic>=2.12.3",
     "pypickle>=2.0.1",
     "scikit-learn>=1.7.2",

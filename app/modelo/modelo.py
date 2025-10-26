@@ -1,10 +1,13 @@
 import pickle
 import re
-from pathlib import Path
+import pathlib
 
 _version_ = "0.1.0"
 
-BASE_DIR = Path(__file__).resolve(strict=True).parent
+BASE_DIR = pathlib.Path(__file__).resolve().parent
+
+MODEL_PATH = BASE_DIR / f"modelo-{_version_}.pkl"
+
 
 with open(f"{BASE_DIR}/modelo-{_version_}.pkl", "rb") as f:
     model = pickle.load(f)
